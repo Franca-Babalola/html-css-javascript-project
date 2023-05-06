@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #22414b;
+  --secondary-color: #3b6f77;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins',
+    sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--secondary-color);
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 10px;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.search::placeholder {
+  color: #b8bbdc;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 5px 10px 10px;
+  letter-spacing: 5px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.brown {
+  color: brown;
+}
+
+.movie-info span.yellow {
+  color: yellowgreen;
+}
+
+.movie-info span.blue {
+  color: blue;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  overflow-y: auto;
+  transition: transform 0.5s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+
+/* 
+.play-button {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pause-button {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stop-button {
+  background-color: #ff0000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+} */
