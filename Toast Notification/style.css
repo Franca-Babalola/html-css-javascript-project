@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #e10abd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: #e10abd;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  .btn:active {
+    transform: scale(0.98);
+  }
+
+  #toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .toast {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.toast.info {
+    color: #e10a0a;
+}
+
+.toast.success {
+    color: #c4e10a;
+}
+
+.toast.error {
+    color: #1f0ae1;
+}
